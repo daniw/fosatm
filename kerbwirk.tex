@@ -24,3 +24,20 @@ Nennspannung
 \[ \tau_n = \frac{M_t}{W_t} \]
 Maximalspannung
 \[ \sigma_{max} = \alpha_k \cdot \alpha_n \]
+Spröde Materialien brechen beim Erreichen der Zugfestigkeit im Kerbgrund. 
+\[ \sigma_{max} = \alpha_k \cdot \sigma_n \leq \sigma_{zul} \]
+Duktile Werkstoffe beginnen beim Erreichen der Zugfestigkeit im Kerbgrund zu fliessen. Die Kerbwirkung hat praktisch keinen Einfluss auf die statische Bauteilfestigkeit. Es darf direkt mit Nennspannung dimensioniert werden. 
+\[ \sigma_n \leq \sigma_{zul} \]
+
+\subsection{Kerbwirkung bei dynamischer Belastung}
+Formzahl
+\[ \alpha_k = \frac{\sigma_{max}}{\sigma_n} \]
+\[ \sigma_{Dk} = \frac{\sigma_D}{\beta_k} \]
+Kerbwirkungszahl
+\[ \beta_k = \frac{\sigma_D}{\sigma_Dk} \qquad \begin{matrix} \sigma_D\text{: Dauerfestigkeit ohne Kerbe}\\\sigma_{Dk}\text{: Dauerfestigkeit mit Kerbe}\end{matrix} \]
+Die Kerbwirkungszahl ist von der Kerbgeometrie und vom Werkstoff abhängig. 
+\[ 1 \leq \beta_k \leq \alpha_k \]
+\begin{tabular}{lll}
+Hochfeste Werkstoffe: &spröde, Kerbempfindlich: &$\beta_k \rightarrow \alpha_k$\\
+"Weiche" Wekstoffe: &wenig Kerbempfindlich: &$\beta_k \rightarrow 1$
+\end{tabular}
