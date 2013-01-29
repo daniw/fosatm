@@ -1,0 +1,58 @@
+% coding:utf-8
+
+%----------------------------------------
+%FOSAMATH, a LaTeX-Code for a mathematical summary for basic analysis
+%Copyright (C) 2013, Daniel Winz, Ervin Mazlagic, Adrian Imboden, Philipp Langer
+
+%This program is free software; you can redistribute it and/or
+%modify it under the terms of the GNU General Public License
+%as published by the Free Software Foundation; either version 2
+%of the License, or (at your option) any later version.
+
+%This program is distributed in the hope that it will be useful,
+%but WITHOUT ANY WARRANTY; without even the implied warranty of
+%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%GNU General Public License for more details.
+%----------------------------------------
+
+% coding:utf-8
+\section{Schnittgrössen}
+
+\subsection{Koordinatensystem}
+Für Balken ist üblich, dass die x-Achse in Längsrichtung des Balkens (nach rechts) liegt und die y-Achse nach unten zeigt. Das Moment zeigt in Gegenuhrzeigerrichtung. 
+
+\subsection{Schnittufer}
+\begin{tabular}{lll}
+\rowcolor{white} \textbf{Schnittgrösse} & \textbf{Vektor} & \textbf{Achsrichtung}\\
+\rowcolor{lgray}
+\textcolor{green} {positiv} & 
+\textcolor{green} {positiv} & 
+\textcolor{green} {positiv} \\
+\rowcolor{white}
+\textcolor{green} {positiv} & 
+\textcolor{red}   {negativ} & 
+\textcolor{red}   {negativ} \\
+\rowcolor{lgray}
+\textcolor{red}   {negativ} & 
+\textcolor{green} {positiv} & 
+\textcolor{red}   {negativ} \\
+\rowcolor{white}
+\textcolor{red}   {negativ} & 
+\textcolor{red}   {negativ} & 
+\textcolor{green} {positiv} 
+\end{tabular}
+
+\subsection{Schnittgrössen am Balken}
+\[ \sum F_x: N - C_x = 0 \]
+\[ \sum F_z: Q - C_z = 0 \]
+\[ \sum M_B: M_b + M_C - C_z \cdot b = 0 \]
+
+\subsection{Vorgehen bei der Berechnung von Schnittgrössen}
+\begin{enumerate}
+  \item Lagerreaktionen berechnen
+  \item Koordinatensystem einzeichnen
+  \item äussere Kräfte auf Bsuteil einzeichnen
+  \item Schnittkräfte einzeichnen
+  \item Gleichgewichtsbedingungen aufstellen
+  \item Schnittkräfte berechnen
+\end{enumerate}
