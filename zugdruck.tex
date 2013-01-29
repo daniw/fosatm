@@ -1,0 +1,79 @@
+% coding:utf-8
+
+%----------------------------------------
+%FOSAMATH, a LaTeX-Code for a mathematical summary for basic analysis
+%Copyright (C) 2013, Daniel Winz, Ervin Mazlagic, Adrian Imboden, Philipp Langer
+
+%This program is free software; you can redistribute it and/or
+%modify it under the terms of the GNU General Public License
+%as published by the Free Software Foundation; either version 2
+%of the License, or (at your option) any later version.
+
+%This program is distributed in the hope that it will be useful,
+%but WITHOUT ANY WARRANTY; without even the implied warranty of
+%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%GNU General Public License for more details.
+%----------------------------------------
+
+% coding:utf-8
+\section{Zug und Druck}
+Voraussetzungen: 
+\begin{itemize}
+  \item Querschnittsfläche senkrecht zur Stabachse
+  \item Normalkraft fällt mit den Flächenmittelpunkt zusammen
+\end{itemize}
+Spannungsverteilung im (glatten) Zugstab ist über den Querschnitt konstant
+\[ \sigma = \frac{F}{A} \]
+Verlängerung des Stabes
+\[ \Delta L = \frac{F \cdot \ell}{E \cdot A} \]
+Dimensionierung des erforderlichen Querschnitts
+\[ A_{erf} \geq \frac{F}{\sigma_{zul}} \]
+Bei gekerbten Stäben ist die Spannungserhöhung zu berücksichtigen
+
+\subsection{Vorzeichen der Spannung}
+Zug: positive Spannung\\
+Druck: negative Apannung\\\\
+Gleichungen gelten für Zug und Druck\\\\
+Schlanken Druckstäbe können knicken, bevor sie die Festigkeit auf Druck überschreiten. (Knickung)
+
+\subsection{Beliebiger Schnitt}
+Normalspannung unter dem Winkel $\alpha$
+\[ \sigma = \frac{\sigma_0}{2} \cdot (1 + \cos 2 \alpha) \]
+Schubspannung unter dem Winkel $\alpha$
+\[ \tau = \frac{\sigma_0}{2} \cdot \sin 2 \alpha \]
+Maximalwerte
+\[ \begin{array}{llll}
+\alpha = 0 & \rightarrow & \sigma_{max} = \sigma_0 & \tau = 0\\
+\alpha = 45^{\circ} & \rightarrow & \tau_{max} = \frac{\sigma_0}{2} & \sigma = \frac{\sigma_0}{2}
+\end{array} \]
+Zähe Werkstoffe, z.B. c) Baustahl versagen durch Abgleiten und Anriss unter $45^{\circ}$\\
+Bei spröden Werkstoffen verläuft der Bruch bei Zugbelastung senkrecht zur Spannungsrichtung wie zum Beispiel bei Kreide oder Grauguss 
+
+\subsection{Wärmedehnung}
+Thermische Verlängerung
+\[ \Delta L_{th} = \alpha \cdot L_0 \cdot \Delta T \]
+Thermische Dehnung
+\[ \varepsilon = \alpha \cdot \Delta T \]
+Überlagerung mit der elastischen Dehnung
+\[ \varepsilon_{ges} = \varepsilon_{el} + \varepsilon_{th} \]
+
+\subsection{Wärmespannungen}
+Thermische Verlängerung
+\[ \Delta L_{th} = \alpha \cdot L_0 \cdot \Delta T \]
+Wird eliminiert durch elastische Stauchung
+\[ \Delta L_{el} = \frac{F \cdot L_0}{E \cdot A} \]
+\[ \Delta L_{th} = \Delta L_{el} \rightarrow \alpha \cdot L_0 \cdot \Delta T = \frac{F \cdot L_0}{E \cdot A} \]
+Spannung
+\[ \sigma = \frac{F}{A} = \alpha \cdot \Delta T \cdot E \]
+F ist eine Druckkraft $\rightarrow$ Spannung negativ
+\[ \sigma = - \sigma \cdot \Delta T \cdot E \]
+
+\subsection{Flächenpressung}
+Die Flächenpressung bei zwei Oberflächen kann sehr komplex sein. \\
+Für die Dimensionierung wird mit einer mittleren Flächenpressung gerechnet. 
+\[ p = \frac{F}{A} \]
+
+\subsection{Lochleibung}
+Die Flächenpressung eines Bolzens in einer Bohrung ist rechnerisch schwierig zu erfassen. 
+Für Berechnungen  wird die Kraft auf die projizierte Fläche angewendet. Die sich ergebende Grösse wird Lochleibungsdruck genannt. 
+\[ p_l = \frac{F}{d \cdot \ell} \]
